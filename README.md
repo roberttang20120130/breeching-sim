@@ -107,5 +107,6 @@ Modify the code on your own computer.
 Send bug fixes, mods, or new features to roberttang20120130@gmail.com.
 If sharing maps online, please include a link back to this original project.
 Mods to enhance the simulator (e.g., new features, better UI, or platform support) are strongly encouraged. Pull requests are welcome!
+
 Contact
 For questions, contributions, or feedback, email roberttang20120130@gmail.com.
