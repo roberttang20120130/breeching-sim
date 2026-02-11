@@ -131,7 +131,7 @@ Here's a sample map file:
 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 ]
 ```
-You can create maps manually in a text editor or script them programmatically.
+You can create maps manually in a text editor or use the provided map editor.
 
 ## Contributing
 
