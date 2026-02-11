@@ -23,7 +23,7 @@ Open-source: Modify the code, fix bugs, or add features on your own machine.
 Installation
 Download or clone the repository.
 Place the entire project folder in your desired location (e.g., C:\cqb-sim).
-For Windows users: To enable native file associations for .thmap files (so they open automatically in the viewer):
+For Windows users: To make the .reg file work without any modifications, place directly in the C: directory:
 If placing the folder on C:, run the provided .reg file directly.
 
 If placing on another drive (e.g., D:), edit the .reg file first. Here's an example for D:\cqb-sim:
