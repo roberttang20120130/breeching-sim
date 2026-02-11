@@ -1,4 +1,5 @@
 this is a top down perspective CQB simulator
+please, anyone make a apple build, I do not have a mac, and I do not have the 100$ for the apple developer certificate
 It uses a custom filetype called .thmap for the map
 all the important rescources are in devrescources 
 the app builds are in game
