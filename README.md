@@ -8,6 +8,8 @@ A top-down perspective Close Quarters Battle (CQB) simulator built for tactical 
 
 [Features](#features)
 
+[Roadmap](#Roadmap)
+
 [Installation](#installation)
 
 [Building the Project and dev info](#building-the-project)
@@ -30,6 +32,20 @@ Top-down grid-based simulation of CQB environments.
 Custom .thmap file format for easy map creation and sharing.
 Windows registry integration for file associations (e.g., double-click to open maps in the viewer).
 Open-source: Modify the code, fix bugs, or add features on your own machine.
+
+## Roadmap
+This project is actively evolving. Here's a high-level plan for upcoming updates:
+
+Prerelease 0.2: Increased max map size (expanding beyond the current 20x20 grid limit).
+
+Prerelease 0.3: Better AI strategy (improved enemy behavior and decision-making).
+
+Prerelease 0.4: Better hitboxes (refined collision detection for more accurate interactions).
+
+Prerelease 0.5: Cosmetic update (visual enhancements, such as improved graphics or UI elements).
+
+Release 1.0: Polishing the release (final bug fixes, optimizations, documentation updates, and overall refinement for a stable launch).
+If you'd like to contribute to any of these features (e.g., code, testing, or ideas), check out the Contributing section!
 
 ## Installation
 
