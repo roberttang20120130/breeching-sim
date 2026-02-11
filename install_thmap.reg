@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; Remove bad association
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.thmap]
+
+; Define extension → filetype
+[HKEY_CLASSES_ROOT\.thmap]
+@="THMapFile"
+"PerceivedType"="text"
+
+; Define the filetype itself
+[HKEY_CLASSES_ROOT\THMapFile]
+@="CQB Tactical Map File"
+
+; Set CUSTOM ICON (this is the important part)
+[HKEY_CLASSES_ROOT\THMapFile\DefaultIcon]
+@="C:\\cqb sim\\devrescources\\map.ico,0"
+
+; Define how it opens
+[HKEY_CLASSES_ROOT\THMapFile\shell\open\command]
+@="\"C:\\cqb sim\\game\\viewer.exe\" \"%1\""
+
