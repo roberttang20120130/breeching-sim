@@ -4,17 +4,17 @@ A top-down perspective Close Quarters Battle (CQB) simulator built for tactical 
 
 ## Table of Contents
 
-Overview[Link Text](#overview)
+[Overview](#overview)
 
-Features[Link Text](#features)
+[Features](#features)
 
-Installation[Link Text](#installation)
+[Installation](#installation)
 
-Building the Project and dev info[Link Text](#building-the-project)
+[Building the Project and dev info](#building-the-project)
 
-Contributing[Link Text](#contributing)
+[Contributing](#contributing)
 
-Contact[Link Text](#contact)
+[Contact](#contact)
 
 ## Overview
 
@@ -43,7 +43,7 @@ If placing the folder on C:, run the provided .reg file directly.
 
 If placing on another drive (e.g., D:), edit the .reg file first. Here's an example for D:\cqb-sim:
 
-
+```
 Windows Registry Editor Version 5.00
 
 ; Remove bad association
@@ -65,6 +65,7 @@ Windows Registry Editor Version 5.00
 ; Define how it opens
 [HKEY_CLASSES_ROOT\THMapFile\shell\open\command]
 @="\"D:\\cqb-sim\\game\\viewer.exe\" \"%1\""
+```
 
 4. Double-click the .reg file to apply changes. Restart your file explorer if needed.
 
@@ -90,7 +91,7 @@ Values within a row are separated by commas (no commas at the start or end of a 
 The grid must be exactly 20x20—anything else will break the simulator.
 Here's a sample map file:
 
-
+```
 [
 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
@@ -113,7 +114,7 @@ Here's a sample map file:
 [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 ]
-
+```
 You can create maps manually in a text editor or script them programmatically.
 
 ## Contributing
