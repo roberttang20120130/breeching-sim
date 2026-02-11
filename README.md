@@ -108,5 +108,8 @@ Send bug fixes, mods, or new features to roberttang20120130@gmail.com.
 If sharing maps online, please include a link back to this original project.
 Mods to enhance the simulator (e.g., new features, better UI, or platform support) are strongly encouraged. Pull requests are welcome!
 
+dev info:
+
+the main game is coded in python 3.11.9 for pygame support
 Contact
 For questions, contributions, or feedback, email roberttang20120130@gmail.com.
