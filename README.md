@@ -1,4 +1,3 @@
-#CQB simulator
 this is a top down perspective CQB simulator
 It uses a custom filetype called .thmap for the map
 all the important rescources are in devrescources 
