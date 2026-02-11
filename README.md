@@ -129,3 +129,6 @@ Mods to enhance the simulator (e.g., new features, better UI, or platform suppor
 ## Contact
 
 For questions, contributions, or feedback, email roberttang20120130@gmail.com.
+
+### note
+sorry about the tons of edits to the readme, I havn't got the hang of github readmes yet.
