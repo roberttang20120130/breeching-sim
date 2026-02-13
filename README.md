@@ -20,7 +20,7 @@ A top-down perspective Close Quarters Battle (CQB) simulator built for tactical 
 
 ## Overview
 
-This simulator allows you to create and view tactical maps for CQB scenarios. Maps are defined in a custom .thmap file format and rendered in a 20x20 grid. The project includes a viewer executable for opening and interacting with maps.
+This simulator allows you to create and view tactical maps for CQB scenarios. Maps are defined in a custom .thmap file format and rendered in a up to 100 x up to 100 grid. The project includes a viewer executable for opening and interacting with maps.
 
 Important Resources: All key assets (e.g., icons, documentation) are in the devresources folder.
 
