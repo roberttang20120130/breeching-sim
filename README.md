@@ -85,14 +85,14 @@ Windows Registry Editor Version 5.00
 
 4. Double-click the .reg file to apply changes. Restart your file explorer if needed.
 
-Note: Maps must be exactly 20x20 grids, or the game will break.
+~~Note: Maps must be exactly 20x20 grids, or the game will break.~~(fixed)
 
 ## Building the Project
 
 The project is built using pygame and python 3.11.9. Builds for Windows are already in the game folder.
 macOS Build Request: I don't have access to a Mac or the $100 Apple Developer certificate. If anyone can build and test an Apple (macOS) version, please contribute it! Submit via pull request or email (see Contact).
 Map File Format (.thmap)
-Maps use a custom .thmap filetype, which is a simple JSON-like array format representing a 20x20 grid.
+Maps use a custom .thmap filetype, which is a simple JSON-like array format representing a up to 100 x up to 100 grid.
 
 **Grid Values:**
 
