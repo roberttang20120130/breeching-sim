@@ -36,7 +36,7 @@ Open-source: Modify the code, fix bugs, or add features on your own machine.
 ## Roadmap
 This project is actively evolving. Here's a high-level plan for upcoming updates:
 
-Prerelease 0.2: Increased max map size (expanding beyond the current 20x20 grid limit).
+~~Prerelease 0.2: Increased max map size (expanding beyond the current 20x20 grid limit).~~ done
 
 Prerelease 0.3: Better AI strategy (improved enemy behavior and decision-making).
 
@@ -104,7 +104,7 @@ Format Rules:
 The file starts with [ and ends with ].
 Each row is inside its own [], separated by commas.
 Values within a row are separated by commas (no commas at the start or end of a row).
-The grid must be exactly 20x20—anything else will break the simulator.
+~~The grid must be exactly 20x20—anything else will break the simulator.~~ (fixed in prerelease 0.2)
 Here's a sample map file:
 
 ```
