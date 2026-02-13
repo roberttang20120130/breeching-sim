@@ -1,9 +1,10 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox
+from tkinter import filedialog, messagebox, simpledialog
 import ast
 
 TILE_SIZE = 24
-GRID = 20
+MAX_SIZE = 100
+DEFAULT_SIZE = 20
 
 COLORS = {
     0: "#8b6b3f",  # floor brown
@@ -16,10 +17,11 @@ class Editor:
         self.root = root
         self.root.title("THMAP Editor")
 
+        self.map_size = DEFAULT_SIZE
         self.current_tile = 1
-        self.map = [[1 for _ in range(GRID)] for _ in range(GRID)]
+        self.map = [[1 for _ in range(self.map_size)] for _ in range(self.map_size)]
 
-        self.canvas = tk.Canvas(root, width=GRID*TILE_SIZE, height=GRID*TILE_SIZE, bg="white")
+        self.canvas = tk.Canvas(root, width=self.map_size*TILE_SIZE, height=self.map_size*TILE_SIZE, bg="white")
         self.canvas.grid(row=0, column=0, columnspan=4)
         self.canvas.bind("<Button-1>", self.paint)
         self.canvas.bind("<B1-Motion>", self.paint)
@@ -31,6 +33,7 @@ class Editor:
 
         tk.Button(root, text="Load", command=self.load).grid(row=2, column=0, columnspan=2, sticky="ew")
         tk.Button(root, text="Save", command=self.save).grid(row=2, column=2, columnspan=2, sticky="ew")
+        tk.Button(root, text="New Map", command=self.new_map).grid(row=3, column=0, columnspan=4, sticky="ew")
 
         self.draw()
 
@@ -38,20 +41,20 @@ class Editor:
         self.current_tile = tile
 
     def clear(self):
-        self.map = [[0 for _ in range(GRID)] for _ in range(GRID)]
+        self.map = [[0 for _ in range(self.map_size)] for _ in range(self.map_size)]
         self.draw()
 
     def paint(self, event):
         x = event.x // TILE_SIZE
         y = event.y // TILE_SIZE
-        if 0 <= x < GRID and 0 <= y < GRID:
+        if 0 <= x < self.map_size and 0 <= y < self.map_size:
             self.map[y][x] = self.current_tile
             self.draw_cell(x, y)
 
     def draw(self):
         self.canvas.delete("all")
-        for y in range(GRID):
-            for x in range(GRID):
+        for y in range(self.map_size):
+            for x in range(self.map_size):
                 self.draw_cell(x, y)
 
     def draw_cell(self, x, y):
@@ -69,9 +72,11 @@ class Editor:
         try:
             with open(path, "r") as f:
                 data = ast.literal_eval(f.read())
-            if len(data) != GRID or any(len(row) != GRID for row in data):
-                raise ValueError("Map must be 20x20")
+            if len(data) > MAX_SIZE or any(len(row) > MAX_SIZE for row in data):
+                raise ValueError(f"Map too big! Max size is {MAX_SIZE}x{MAX_SIZE}")
+            self.map_size = len(data)
             self.map = data
+            self.canvas.config(width=self.map_size*TILE_SIZE, height=self.map_size*TILE_SIZE)
             self.draw()
         except Exception as e:
             messagebox.showerror("Error", f"Failed to load: {e}")
@@ -88,6 +93,15 @@ class Editor:
                 f.write("]")
         except Exception as e:
             messagebox.showerror("Error", f"Failed to save: {e}")
+
+    def new_map(self):
+        size = simpledialog.askinteger("New Map", f"Enter map size (1-{MAX_SIZE}):", minvalue=1, maxvalue=MAX_SIZE)
+        if not size:
+            return
+        self.map_size = size
+        self.map = [[1 for _ in range(size)] for _ in range(size)]
+        self.canvas.config(width=self.map_size*TILE_SIZE, height=self.map_size*TILE_SIZE)
+        self.draw()
 
 if __name__ == "__main__":
     root = tk.Tk()
