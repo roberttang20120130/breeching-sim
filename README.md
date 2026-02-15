@@ -38,7 +38,45 @@ This project is actively evolving. Here's a high-level plan for upcoming updates
 
 ~~Prerelease 0.2: Increased max map size (expanding beyond the current 20x20 grid limit).~~ done
 
-Prerelease 0.3: Better AI strategy (improved enemy behavior and decision-making).
+~~Prerelease 0.3: Better AI strategy (improved enemy behavior and decision-making).~~ done
+
+### release notes
+
+added doors as 3 and 4 for vertical and horizizontal doors, removed enemy pathfinding as enemies swarming you is not realistic, graphics are more gpu based for better framerates
+
+Recommended System Specs for CQB Simulator
+
+Recommended (1080p smooth gameplay)
+
+OS: Windows 10 / 11 (64-bit)
+
+CPU: Intel Core i5-12400 / AMD Ryzen 5 5600X 
+
+RAM: 16 GB
+
+GPU: NVIDIA GTX 1060 / 1660 or AMD RX 6600
+
+Storage: 100 mb free
+
+Game Settings: steps = 120, medium maps (≤75x75), 1080p
+
+Expected FPS: ~60
+
+High-end (max FOV, large maps, high refresh)
+
+OS: Windows 10 / 11 (64-bit)
+
+CPU: Intel Core i7-13700K / AMD Ryzen 7 7700X
+
+RAM: 64 GB
+
+GPU: NVIDIA RTX 4060 / AMD RX 7700 XT
+
+Storage: 100 mb free
+
+Game Settings: steps = 180+, full maps (100x100), 1080p+
+
+Expected FPS: 100–120+
 
 Prerelease 0.4: Better hitboxes (refined collision detection for more accurate interactions).
 
