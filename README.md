@@ -42,7 +42,7 @@ This project is actively evolving. Here's a high-level plan for upcoming updates
 
 ### release notes
 
-added doors as 3 and 4 for vertical and horizizontal doors, removed enemy pathfinding as enemies swarming you is not realistic, graphics are more gpu based for better framerates
+added doors as 3 and 4 for vertical and horizizontal doors, removed enemy pathfinding as enemies swarming you is not realistic, graphics are more gpu based for better framerates, because the main game exe is getting too big for direct upload, its hosted using github lfs, becasue of this, download as zip will not download the proper cqb_sim.exe, it is recomended to directly download the raw file of that or download the latest release .zip in the releases tab.
 
 Recommended System Specs for CQB Simulator
 
