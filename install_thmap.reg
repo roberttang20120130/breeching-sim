@@ -14,9 +14,9 @@ Windows Registry Editor Version 5.00
 
 ; Set CUSTOM ICON (this is the important part)
 [HKEY_CLASSES_ROOT\THMapFile\DefaultIcon]
-@="C:\\cqb sim\\devrescources\\map.ico,0"
+@="C:\\breeching-sim\\devrescources\\map.ico,0"
 
 ; Define how it opens
 [HKEY_CLASSES_ROOT\THMapFile\shell\open\command]
-@="\"C:\\cqb sim\\game\\viewer.exe\" \"%1\""
+@="\"C:\\breeching-sim\\game\\viewer.exe\" \"%1\""
 

@@ -56,7 +56,7 @@ RAM: 16 GB
 
 GPU: NVIDIA GTX 1060 / 1660 or AMD RX 6600
 
-Storage: 100 mb free
+Storage: 200 mb free
 
 Game Settings: steps = 120, medium maps (≤75x75), 1080p
 
@@ -72,7 +72,7 @@ RAM: 64 GB
 
 GPU: NVIDIA RTX 4060 / AMD RX 7700 XT
 
-Storage: 100 mb free
+Storage: 200 mb free
 
 Game Settings: steps = 180+, full maps (100x100), 1080p+
 
