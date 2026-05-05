@@ -40,9 +40,23 @@ This project is actively evolving. Here's a high-level plan for upcoming updates
 
 ~~Prerelease 0.3: Better AI strategy (improved enemy behavior and decision-making).~~ done
 
+
+
+
 ### release notes
 
-added doors as 3 and 4 for vertical and horizizontal doors, removed enemy pathfinding as enemies swarming you is not realistic, graphics are more gpu based for better framerates, because the main game exe is getting too big for direct upload, its hosted using github lfs, becasue of this, download as zip will not download the proper cqb_sim.exe, it is recomended to directly download the raw file of that or download the latest release .zip in the releases tab.
+###**RELEASE 1.0 MAJOR:**
+
+###random stuff
+fixing game crash errors when the user does not select file and press cancel
+adding a loading screen due to the game taking a long time to load on some devices
+
+###important stuff
+finally adding win and lose conditions
+making enemies have more realistic reaction speeds
+
+
+we will stop updating the game folder due to LFS complexities, to download the latest app, go to releases
 
 Recommended System Specs for CQB Simulator
 
@@ -50,7 +64,7 @@ Recommended (1080p smooth gameplay)
 
 OS: Windows 10 / 11 (64-bit)
 
-CPU: Intel Core i5-12400 / AMD Ryzen 5 5600X 
+CPU: Intel Core i5 5th gen (it actualy works) / AMD Ryzen 5 3rd gen 
 
 RAM: 16 GB
 
@@ -78,16 +92,11 @@ Game Settings: steps = 180+, full maps (100x100), 1080p+
 
 Expected FPS: 100–120+
 
-Prerelease 0.4: Better hitboxes (refined collision detection for more accurate interactions).
 
-Prerelease 0.5: Cosmetic update (visual enhancements, such as improved graphics or UI elements).
-
-Release 1.0: Polishing the release (final bug fixes, optimizations, documentation updates, and overall refinement for a stable launch).
-If you'd like to contribute to any of these features (e.g., code, testing, or ideas), check out the Contributing section!
 
 ## Installation
 
-1. Download or clone the repository.
+1. Download the latest release from releases.
 2. Place the entire project folder in your desired location (e.g., C:\cqb-sim).
 
 **note**
