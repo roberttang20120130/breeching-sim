@@ -64,11 +64,11 @@ we will stop updating the game folder due to LFS complexities, to download the l
 
 
 
-Minimum Specs
+### Minimum Specs
 
 potato
 
-Recommended Specs
+### Recommended Specs
 
 CPU: Quad-core 3.0 GHz (Intel Core i5-9400F / AMD Ryzen 5 3600 or better)
 RAM: 4 GB available
