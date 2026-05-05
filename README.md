@@ -45,13 +45,15 @@ This project is actively evolving. Here's a high-level plan for upcoming updates
 
 ### release notes
 
-##**RELEASE 1.0 MAJOR:**
+## RELEASE 1.0 MAJOR:
 
-random stuff
+random stuff:
+
 fixing game crash errors when the user does not select file and press cancel
 adding a loading screen due to the game taking a long time to load on some devices
 
-important stuff
+important stuff:
+
 finally adding win and lose conditions
 making enemies have more realistic reaction speeds
 
