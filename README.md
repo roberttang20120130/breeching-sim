@@ -60,39 +60,21 @@ making enemies have more realistic reaction speeds
 
 we will stop updating the game folder due to LFS complexities, to download the latest app, go to releases
 
-Recommended System Specs for CQB Simulator
 
-Recommended (1080p smooth gameplay)
 
-OS: Windows 10 / 11 (64-bit)
 
-CPU: Intel Core i5 5th gen (it actualy works) / AMD Ryzen 5 3rd gen 
 
-RAM: 16 GB
+Minimum Specs
 
-GPU: NVIDIA GTX 1060 / 1660 or AMD RX 6600
+potato
 
-Storage: 200 mb free
+Recommended Specs
 
-Game Settings: steps = 120, medium maps (≤75x75), 1080p
-
-Expected FPS: ~60
-
-High-end (max FOV, large maps, high refresh)
-
-OS: Windows 10 / 11 (64-bit)
-
-CPU: Intel Core i7-13700K / AMD Ryzen 7 7700X
-
-RAM: 64 GB
-
-GPU: NVIDIA RTX 4060 / AMD RX 7700 XT
-
-Storage: 200 mb free
-
-Game Settings: steps = 180+, full maps (100x100), 1080p+
-
-Expected FPS: 100–120+
+CPU: Quad-core 3.0 GHz (Intel Core i5-9400F / AMD Ryzen 5 3600 or better)
+RAM: 4 GB available
+GPU: Intel UHD 630+ / AMD Vega 11+ / NVIDIA GTX 1050 or better
+Storage: 200 MB free
+OS: Windows 10/11 (64-bit)
 
 
 
